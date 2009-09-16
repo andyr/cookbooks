@@ -17,7 +17,7 @@
   
   SSLEngine On
   SSLCertificateFile /etc/chef/certificates/<%= @node[:chef][:server_fqdn] %>.pem
-  SSLCertificateKeyFile /etc/chef/certificates/<%= @node[:chef][:server_fqdn] %>.pem
+  SSLCertificateKeyFile /etc/chef/certificates/<%= @node[:chef][:server_fqdn] %>.key
 </VirtualHost>
 
 <VirtualHost *:444>
@@ -39,5 +39,5 @@
   
   SSLEngine On
   SSLCertificateFile /etc/chef/certificates/<%= @node[:chef][:server_fqdn] %>.pem
-  SSLCertificateKeyFile /etc/chef/certificates/<%= @node[:chef][:server_fqdn] %>.pem
+  SSLCertificateKeyFile /etc/chef/certificates/<%= @node[:chef][:server_fqdn] %>.key
 </VirtualHost>
